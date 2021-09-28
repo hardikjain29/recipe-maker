@@ -1,3 +1,5 @@
+import { RecipeData } from "../commonTypes/RecipeTypes";
+
 type Entry = {
   fields: Record<string, any>
   sys: Record<string, any>
@@ -11,7 +13,7 @@ type RecipeDataResponse = {
   }
 }
 
-export const transformRecipeData = (recipeData: RecipeDataResponse) => {
+export const transformRecipeData = (recipeData: RecipeDataResponse): RecipeData => {
   const recipes = transformRecipes(recipeData.items);
 
   const tagEntries: Array<Entry> = [];
