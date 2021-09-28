@@ -62,3 +62,10 @@
 .recipe-card__item-btn:hover, .recipe-card__item-btn:active {
   background-color: #a4fbff;
 }
+
+.modal-close-btn {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  cursor: pointer;
+}
